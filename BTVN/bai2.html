@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN Tuần 2 Tạ Liêm Chính</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px 0; 
+    }
+    th , td{
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Web PRIVATE 2026</h1>
+        <span>Cùng học, thực hành và xây dựng trang web đầu tiên của bạn , là bạn.</span>
+        <nav>
+                <a href="#review" >Giới Thiệu</a>
+                <a href="#content">Nội Dung Học</a>
+                <a href="#calendar">Lịch Học</a>
+                <a href="#signin"> Đăng Ký</a>
+        </nav>
+    </header>
+    <main>
+        <section id="review"><h2>Giới Thiệu</h2>
+            <span>Lớp học dành cho những bạn <b>chưa có kinh nghiệm lập trình Web.</b></span><br>
+            <span>Bạn sẽ <em>tự tay thực hành</em> để hiểu cách tạo một trang web, bắt đầu với <mark>HTML cơ bản</mark>.</span><br>
+            <div><img src="https://thienbao28287.github.io/WEB_PRIVATE_2026/Lesson2/img/web.svg" alt="anh demo" width="300px" height="100px"><br>
+            <span>Ba thành phần cơ bản của một trang web.</span></div>
+            <span>Tham khảo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">tài liệu HTML trên MDN</a></span>
+            <h3>Quan sát Block và Inline</h3>
+            <span>Đây là khối nội dung thứ nhất.</span><br>
+            <span>Đây là khối nội dung thứ hai.</span><br>
+            <span>Đây là nội dung inline thứ nhất. Đây là nội dung inline thứ hai.</span>
+        </section>
+        <section id="content">
+            <h2>Nội Dung Học</h2>
+            <ul>
+                <li>HTML: Xây dựng cấu trúc và nội dung trang.</li>
+                <li>CSS: Định dạng giao diện trang.</li>
+                <li>JavaScript: Tạo tương tác trên trang.</li>
+            </ul>
+            <h3>Các bước tham gia</h3>
+            <ol>
+                <li>Đọc thông tin và lịch học.</li>
+                <li>Điền biểu mẫu đăng ký.</li>
+                <li>Chuẩn bị laptop và tham gia buổi học đầu tiên.</li>
+            </ol>
+            <h3>Thông Báo Khai Giảng</h3>
+            <span>Lịch khai giảng chuyển từ <del>Thứ Ba</del> sang <strong>Thứ Hai</strong>.</span><br>
+            <span>Hãy đến trước giờ học 15 phút để kiểm tra công cụ.</span>
+        </section>
+        <section id="calender">
+            <h2>Lịch Học</h2>
+            <table>
+                <caption>Lịch học ba Buổi Học Đầu Tiên</caption>
+                <thead>
+                    <tr>
+                    <th scope="col" >Buổi</th>
+                    <th scope="col">Nội Dung</th>
+                    <th scope="col">Thời Lượng</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cài Đặt Công Cụ và Git</td>
+                        <td>2 giờ</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>HTML cơ bản</td>
+                        <td>2 giờ</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>CSS cơ bản</td>
+                        <td>2 giờ</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Tổng Thời Lượng</th>
+                        <td>6 giờ</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="signin">
+            <h2>Đăng Kí Tham Gia</h2>
+            <span>Biểu mẫu thực hành, chưa có chức năng lưu đăng ký. Hãy dùng dữ liệu giả để thử.</span>
+            <form action="#signin" method="get">
+                <fieldset>
+                    <legend>Thông Tin Học Viên</legend>
+                    <p>
+                        <label for="name">Họ và Tên (Bắt Buộc):</label>
+                        <input type="text" id="name" name="fname" required >
+                    </p>
+                    <p>
+                        <label for="email">Email (Bắt Buộc):</label>
+                        <input type="text" id="email" name="email" required >
+                    </p>
+                    <p>
+                        <label for="trinhdo">Trình Độ Hiện Tại:</label>
+                        <select name="trinhdo" id="trinhdo">
+                            <option value="1">Mới bắt đầu</option>
+                            <option value="2">Đã biết cơ bản</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Nguyện vọng học tập</legend>
+                    <p>Ca học mong muốn:</p>
+                    <p>
+                        <input type="radio" id="sang" name="cahoc" value="sang">
+                        <label for="sang">Buổi sáng</label>
+                        <input type="radio" id="toi" name="cahoc" value="toi">
+                        <label for="toi">Buổi tối</label>
+                    </p>
+                    <p>
+                        <label for="note">Mong muốn khi tham gia:</label><br>
+                        <textarea name="note" id="note" rows="4" cols="35"></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="dongtinh" name="dongtinh" value="yes">
+                        <label for="dongtinh">Tôi muốn tham gia buổi thực hành</label>
+                    </p>
+                </fieldset>
+            </form>
+            <button>Đăng Ký</button>
+        </section>
+    </main>
+    <footer>
+        <h2>Nhắc Nhở</h2>
+        <span>Chuẩn bị laptop và cài đặt VS Code trước khi đến lớp.</span><br><br>
+        <span>Người thực hiện: Nguyễn Văn A</span><br>
+        <span>Email minh họa: an@example.com</span><br><br>
+        <small>© 2026 Lớp học Web. Bài thực hành HTML cơ bản.</small>
+    </footer>
+</body>
+</html>

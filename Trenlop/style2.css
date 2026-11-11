@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    height:fit-content;
+}
+.card{
+    border: 5px solid blue;
+    width: 500px; 
+}
